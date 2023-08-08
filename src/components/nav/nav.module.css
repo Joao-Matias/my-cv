@@ -1,0 +1,71 @@
+.landingNav {
+  display: flex;
+
+  width: 100%;
+  height: 13rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.landingNavNameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+  width: 50%;
+
+  gap: 0.5rem;
+}
+
+.landingNavName {
+  display: flex;
+  align-items: center;
+}
+
+.landingNavNameFirst {
+  font-size: 4rem;
+}
+
+.landingNavNameRest {
+  font-size: 3rem;
+}
+
+.landingNavJobBox {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.landingNavJob {
+  font-size: 1.3rem;
+}
+
+.landingNavNameFirst,
+.landingNavNameRest,
+.landingNavJob,
+.landingMenuTitles {
+  color: #14213d;
+}
+
+.landingNavJobTechLogos {
+  font-size: 2rem;
+  width: 2rem;
+}
+
+.landingNavMenu {
+  display: flex;
+
+  width: 35%;
+}
+
+.landingMenuTitles {
+  font-size: 1.6rem;
+}
