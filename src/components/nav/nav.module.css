@@ -22,6 +22,13 @@
 .landingNavName {
   display: flex;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.landingNavName:hover .landingNavNameFirst,
+.landingNavName:hover .landingNavNameRest {
+  color: #2b4783;
 }
 
 .landingNavNameFirst {
@@ -64,6 +71,14 @@
   display: flex;
 
   width: 35%;
+}
+
+.landingNavMenuBox {
+  cursor: pointer;
+}
+
+.landingNavMenuBox:hover .landingMenuTitles {
+  color: #2b4783;
 }
 
 .landingMenuTitles {

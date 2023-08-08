@@ -48,13 +48,13 @@ const Nav = () => {
       </div>
 
       <div className={style.landingNavMenu}>
-        <div>
+        <div className={style.landingNavMenuBox}>
           <h4 className={style.landingMenuTitles}>Projects</h4>
         </div>
-        <div>
+        <div className={style.landingNavMenuBox}>
           <h4 className={style.landingMenuTitles}>Experience</h4>
         </div>
-        <div>
+        <div className={style.landingNavMenuBox}>
           <h4 className={style.landingMenuTitles}>Education</h4>
         </div>
       </div>
