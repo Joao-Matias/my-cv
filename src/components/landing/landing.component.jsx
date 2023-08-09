@@ -4,6 +4,12 @@ import React from 'react';
 import Nav from '../nav';
 import userImg from '../../img/JMatias-pic.jpg';
 
+import jsLogo from '../../img/logo-javascript.svg';
+import reactLogo from '../../img/logo-react.svg';
+import cssLogo from '../../img/logo-css3.svg';
+import htmlLogo from '../../img/logo-html5.svg';
+import gitLogo from '../../img/logo-github.svg';
+
 const Landing = () => {
   return (
     <header className={style.landingContainer}>
@@ -33,6 +39,37 @@ const Landing = () => {
           </h2>
         </div>
       </section>
+
+      <div className={style.landingJobTechBox}>
+        <h1 className={style.landingJobHeading}>Tech Stack</h1>
+        <div className={style.landingJobTech}>
+          <img
+            src={jsLogo}
+            alt='Javascript Logo'
+            className={style.landingJobTechLogos}
+          />
+          <img
+            src={reactLogo}
+            alt='React Logo'
+            className={style.landingJobTechLogos}
+          />
+          <img
+            src={cssLogo}
+            alt='Css Logo'
+            className={style.landingJobTechLogos}
+          />
+          <img
+            src={htmlLogo}
+            alt='HTML Logo'
+            className={style.landingJobTechLogos}
+          />
+          <img
+            src={gitLogo}
+            alt='GitHub Logo'
+            className={style.landingJobTechLogos}
+          />
+        </div>
+      </div>
     </header>
   );
 };

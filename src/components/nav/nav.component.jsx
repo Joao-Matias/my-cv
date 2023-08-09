@@ -1,11 +1,5 @@
 import style from './nav.module.css';
 
-import jsLogo from '../../img/logo-javascript.svg';
-import reactLogo from '../../img/logo-react.svg';
-import cssLogo from '../../img/logo-css3.svg';
-import htmlLogo from '../../img/logo-html5.svg';
-import gitLogo from '../../img/logo-github.svg';
-
 const Nav = () => {
   return (
     <nav className={style.landingNav}>
@@ -17,33 +11,6 @@ const Nav = () => {
 
         <div className={style.landingNavJobBox}>
           <h3 className={style.landingNavJob}>Junior FrontEnd Dev</h3>
-          <div className={style.landingNavJobTech}>
-            <img
-              src={jsLogo}
-              alt='Javascript Logo'
-              className={style.landingNavJobTechLogos}
-            />
-            <img
-              src={reactLogo}
-              alt='React Logo'
-              className={style.landingNavJobTechLogos}
-            />
-            <img
-              src={cssLogo}
-              alt='Css Logo'
-              className={style.landingNavJobTechLogos}
-            />
-            <img
-              src={htmlLogo}
-              alt='HTML Logo'
-              className={style.landingNavJobTechLogos}
-            />
-            <img
-              src={gitLogo}
-              alt='GitHub Logo'
-              className={style.landingNavJobTechLogos}
-            />
-          </div>
         </div>
       </div>
 

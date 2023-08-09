@@ -1,7 +1,7 @@
 .landingContainer {
   background-color: #e5e5e5;
   width: 100%;
-  height: 80rem;
+  height: 95rem;
 }
 
 .landingHero {
@@ -50,4 +50,33 @@
 .landingHeroDescription p,
 .landingHeroDescription h2 {
   color: #14213d;
+}
+
+.landingJobTechBox {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 20rem;
+  margin-top: 15rem;
+
+  background-color: white;
+}
+
+.landingJobHeading {
+  margin-top: 3rem;
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.landingJobTech {
+  display: flex;
+
+  width: 60%;
+  height: 20rem;
+}
+
+.landingJobTechLogos {
+  width: 7rem;
+  opacity: 0.7;
 }
