@@ -12,7 +12,7 @@ import gitLogo from '../../img/logo-github.svg';
 
 const Landing = () => {
   return (
-    <header className={style.landingContainer}>
+    <section className={style.landingContainer}>
       <Nav />
       <section className={style.landingHero}>
         <div className={style.landingImgBox}>
@@ -70,7 +70,7 @@ const Landing = () => {
           />
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 

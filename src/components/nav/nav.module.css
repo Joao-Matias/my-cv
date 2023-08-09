@@ -63,9 +63,13 @@
 }
 
 .landingNavMenu {
-  display: flex;
-
   width: 35%;
+}
+
+.landingNavMenuList {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
 .landingNavMenuBox {
@@ -78,4 +82,8 @@
 
 .landingMenuTitles {
   font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+
+  text-decoration: none;
 }
