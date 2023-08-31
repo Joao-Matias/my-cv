@@ -3,6 +3,9 @@ import React from 'react';
 import style from './projects.module.css';
 
 const Projects = () => {
+  
+const projects = []
+
   return (
     <section className={style.projectsContainer}>
       <header className={style.projectsContainerHeader}>
