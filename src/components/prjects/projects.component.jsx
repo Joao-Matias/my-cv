@@ -9,6 +9,7 @@ const Projects = () => {
         <h1 className={style.projectsContainerNumeral}>01</h1>
         <h1 className={style.projectsContainerTitle}> Projects</h1>
       </header>
+      <section></section>
     </section>
   );
 };
