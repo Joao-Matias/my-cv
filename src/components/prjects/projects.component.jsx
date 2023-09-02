@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import './projects.module.css';
+
 import style from './projects.module.css';
 import getProjectsOptions from '../../services/get-projects-options';
 
+import gitLogo from '../../img/logo-github.svg';
+
 const Projects = () => {
+  const [selectedPrj, setSelectedPrj] = useState({
+    title: 'Select a project',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+  });
+
   const options = getProjectsOptions();
 
   return (
@@ -12,19 +23,61 @@ const Projects = () => {
         <h1 className={style.projectsContainerNumeral}>01</h1>
         <h1 className={style.projectsContainerTitle}> Projects</h1>
       </header>
-      {options.map((project, i) => {
-        return (
-          <section key={i} className={style.projectCont}>
-            <div className={style.projectImgs}>
-              {/* <video className={style.projectVideoCont} autoPlay loop muted>
-                <source src={project.gif} type={project.type} />
-              </video> */}
-
-              <img src={project.icon} />
+      <section className={style.projectCont}>
+        <div className={style.projectTextBox}>
+          <div className={style.projectTextCont}>
+            <div className={style.projectTextTitleCont}>
+              <Link
+                className={style.projectButtonCont}
+                to={selectedPrj.link}
+                target='_blank'
+              >
+                <h2 className={style.projectTextTitle}>{selectedPrj.title}</h2>
+              </Link>
             </div>
-          </section>
-        );
-      })}
+            <div className={style.projectTextDescriptionCont}>
+              <p className={style.projectTextDescription}>
+                {selectedPrj.description}
+              </p>
+            </div>
+          </div>
+          <div className={style.projectLinkCont}>
+            {!selectedPrj.git ? (
+              ''
+            ) : (
+              <div className={style.projectGitCont}>
+                <Link to={selectedPrj.git} target='_blank'>
+                  <img className={style.projectGit} src={gitLogo} />
+                </Link>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className={style.projectImgsBox}>
+          {options.map((project, i) => {
+            return (
+              <div
+                onClick={() => {
+                  setSelectedPrj(project);
+                }}
+                key={i}
+                className={style.projectImgCont}
+              >
+                <img
+                  className={
+                    selectedPrj.title === project.title
+                      ? style.projectImgScaled
+                      : style.projectImg
+                  }
+                  alt={project.alt}
+                  src={project.icon}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </section>
   );
 };
