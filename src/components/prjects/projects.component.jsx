@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import style from './projects.module.css';
 import getProjectsOptions from '../../services/get-projects-options';
 
@@ -12,14 +12,15 @@ const Projects = () => {
         <h1 className={style.projectsContainerNumeral}>01</h1>
         <h1 className={style.projectsContainerTitle}> Projects</h1>
       </header>
-      {options.map((project) => {
+      {options.map((project, i) => {
         return (
-          <section className={style.projectCont}>
-            <div></div>
-            <div>
-              <video autoPlay loop muted>
-                <source src={project.icon} type='video/mp4' />
-              </video>
+          <section key={i} className={style.projectCont}>
+            <div className={style.projectImgs}>
+              {/* <video className={style.projectVideoCont} autoPlay loop muted>
+                <source src={project.gif} type={project.type} />
+              </video> */}
+
+              <img src={project.icon} />
             </div>
           </section>
         );

@@ -1,6 +1,5 @@
 .projectsContainer {
   width: 75%;
-  height: 10rem;
 
   margin-top: 10rem;
 }
@@ -26,4 +25,16 @@
 .projectsContainerTitle,
 .projectsContainerNumeral {
   color: #14213d;
+}
+
+.projectCont {
+  margin-top: 10rem;
+
+  display: flex;
+
+  flex-direction: row;
+}
+
+.projectImgs {
+  display: grid;
 }

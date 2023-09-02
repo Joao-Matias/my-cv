@@ -17,19 +17,19 @@ const Nav = () => {
       <nav className={style.landingNavMenu}>
         <ul className={style.landingNavMenuList}>
           <li className={style.landingNavMenuBox}>
-            <a className={style.landingMenuTitles} href='#'>
-              Projects
-            </a>
+            {/* <a className={style.landingMenuTitles} href='#'> */}
+            Projects
+            {/* </a> */}
           </li>
           <li className={style.landingNavMenuBox}>
-            <a className={style.landingMenuTitles} href='#'>
-              Experience
-            </a>
+            {/* <a className={style.landingMenuTitles} href='#'> */}
+            Experience
+            {/* </a> */}
           </li>
           <li className={style.landingNavMenuBox}>
-            <a className={style.landingMenuTitles} href='#'>
-              Education
-            </a>
+            {/* <a className={style.landingMenuTitles} href='#'> */}
+            Education
+            {/* </a> */}
           </li>
         </ul>
       </nav>
