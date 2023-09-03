@@ -8,9 +8,10 @@ import gitLogo from '../../img/logo-github.svg';
 
 const Projects = () => {
   const [selectedPrj, setSelectedPrj] = useState({
+    id: 'initial',
     title: 'Select a project',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+      'You will find my projects here, click in any to find more information about them.',
   });
 
   const id = Date.now();
@@ -27,13 +28,23 @@ const Projects = () => {
         <div key={id} className={style.projectTextBox}>
           <div className={style.projectTextCont}>
             <div className={style.projectTextTitleCont}>
-              <Link
-                className={style.projectButtonCont}
-                to={selectedPrj.link}
-                target='_blank'
-              >
-                <h2 className={style.projectTextTitle}>{selectedPrj.title}</h2>
-              </Link>
+              {selectedPrj.id === 'initial' ? (
+                <div>
+                  <h2 className={style.projectTextTitle}>
+                    {selectedPrj.title}
+                  </h2>
+                </div>
+              ) : (
+                <Link
+                  className={style.projectButtonCont}
+                  to={selectedPrj.link}
+                  target='_blank'
+                >
+                  <h2 className={style.projectTextTitle}>
+                    {selectedPrj.title}
+                  </h2>
+                </Link>
+              )}
             </div>
             <div className={style.projectTextDescriptionCont}>
               <p className={style.projectTextDescription}>

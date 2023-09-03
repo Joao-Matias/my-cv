@@ -12,7 +12,7 @@ const getProjectsOptions = () => {
       title: 'MeaList',
       link: 'https://react-meal-list.netlify.app/',
       description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+        'A food app divided in two sections, creating recipes and shopping lists. When creating your recipe you can add a picture to better identify this recipe. Add,remove and edit ingredients as you need to make that masterpiece. When creating a shopping list add, remove, edit and shuffle items to better organize it. If you already created your favorite recipe, select it and transfer the ingredients to the list. ',
       icon: meaListImg,
       git: 'https://github.com/Joao-Matias/meal-list-react',
       alt: 'Front page of MeaList Website with a someone holding a pen and a notebook, and vegetables in the other image ',
@@ -21,7 +21,7 @@ const getProjectsOptions = () => {
       title: 'Omnifood',
       link: 'https://omnifood-jdmatias.netlify.app/',
       description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+        'A one page website dedicated to a food app to daily provide you with your favorite meals. Divided into different section explaining how to use the app, providing different types of meals, giving some testimonials and some package options for this app.',
       icon: omnifoodImg,
       alt: 'Landing page for the website omnifood, a website about a food app',
     },
@@ -29,7 +29,7 @@ const getProjectsOptions = () => {
       title: 'PigGame',
       link: 'https://pig-game-jdmatias.netlify.app/',
       description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+        'A simple game app where the objective is to get to one hundred points and you get there by rolling the dice and adding the value of the dice to your current points. When you feel ready you can hold on to the points already adquire passing the turn to your opponent. If you ever roll a one all the current points are lost and it is your oppenents turn.',
       icon: pigGameImg,
       git: 'https://github.com/Joao-Matias/PigGame',
       alt: 'Website application game',
@@ -38,7 +38,7 @@ const getProjectsOptions = () => {
       title: 'Mapty',
       link: 'https://mapty-jdmatias.netlify.app/',
       description:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
+        'Tracking app that records your training. By clicking anywhere on the map you can record, either a running or cycling practice. When you do that you can input some stats of that session. After to register that session you can later on see it on the map and check where it happen and the different state register previouly.',
       icon: maptyImg,
       git: 'https://github.com/Joao-Matias/Mapty',
       alt: 'A map with possibility of loggin trainings',

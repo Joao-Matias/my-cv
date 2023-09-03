@@ -88,9 +88,8 @@
 .projectButtonCont {
   display: flex;
   justify-content: center;
-  margin: 0;
   text-decoration: none;
-  width: 100%;
+  width: 30%;
 }
 
 .projectButtonCont:hover .projectTextTitle {

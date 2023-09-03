@@ -1,7 +1,9 @@
 .experienceContainer {
-  width: 75%;
+  margin: auto 0;
 
   margin-top: 10rem;
+
+  background-color: #e5e5e5;
 }
 
 .experienceContainerHeader {
@@ -9,6 +11,7 @@
   width: 50%;
   align-items: flex-end;
   justify-content: center;
+  padding-top: 5rem;
 }
 
 .experienceContainerNumeral {
@@ -26,23 +29,120 @@
   margin-left: 1rem;
 }
 
-.experienceContainerTitle,
-.experienceContainerNumeral {
-  color: #14213d;
-}
-
 .experiencesContainer {
   display: flex;
   flex-direction: column;
 
   margin: 0 auto;
+
+  margin-top: 7rem;
 }
 
 .experiencesBox {
   display: flex;
   flex-direction: row;
+  width: 70%;
+
+  justify-content: space-between;
+
+  margin-top: 5rem;
+}
+
+.experiencesCont {
+  display: flex;
+  flex-direction: column;
+
+  width: 48%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.7s ease-in;
+}
+
+.experiencesContAnimation {
+  display: flex;
+  flex-direction: column;
+
+  width: 48%;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.7s ease-in;
+}
+
+.experiencesYearsCont {
+  display: flex;
+  flex-direction: row;
+
+  width: 40%;
+}
+
+.experiencesYears {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.experiencesJobCont {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.experiencesJob {
+  font-size: 2.2rem;
+}
+
+.experiencesBulletsCont {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 2%;
+  height: 2rem;
 }
 
 .experiencesBullets {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.experiencesCompanyCont {
+  display: flex;
+  flex-direction: column;
+
+  width: 48%;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.7s ease-in;
+}
+
+.experiencesCompanyContAnimation {
+  display: flex;
+  flex-direction: column;
+
+  width: 48%;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.7s ease-in;
+}
+
+.experiencesCompany {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.experiencesResponsabilitiesCont {
+  margin-top: 2.5rem;
+  list-style: none;
+  width: 100%;
+}
+
+.experiencesResponsabilities {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 0.7rem;
+}
+
+.experienceContainerTitle,
+.experienceContainerNumeral,
+.experiencesYears,
+.experiencesJob,
+.experiencesCompany,
+.experiencesResponsabilities {
+  color: #14213d;
 }

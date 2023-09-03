@@ -1,5 +1,5 @@
 import style from './landing.module.css';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Nav from '../nav';
 import userImg from '../../img/JMatias-pic.jpg';
@@ -11,9 +11,27 @@ import htmlLogo from '../../img/logo-html5.svg';
 import gitLogo from '../../img/logo-github.svg';
 
 const Landing = () => {
+  const [scrollTop, setScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <section className={style.landingContainer}>
-      <Nav />
+    <section
+      className={
+        scrollTop >= 710 ? style.landingContainerExtra : style.landingContainer
+      }
+    >
+      <Nav scrollTop={scrollTop} />
       <section className={style.landingHero}>
         <div className={style.landingImgBox}>
           <img
