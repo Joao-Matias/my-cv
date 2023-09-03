@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import './projects.module.css';
-
 import style from './projects.module.css';
 import getProjectsOptions from '../../services/get-projects-options';
 
@@ -15,16 +13,18 @@ const Projects = () => {
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, illum, distinctio nam dignissimos eligendi quo et est dolores amet possimus assumenda fugiat voluptatem deserunt temporibus? Molestias numquam exercitationem nostrum ratione!',
   });
 
+  const id = Date.now();
+
   const options = getProjectsOptions();
 
   return (
     <section className={style.projectsContainer}>
-      <header className={style.projectsContainerHeader}>
+      <div className={style.projectsContainerHeader}>
         <h1 className={style.projectsContainerNumeral}>01</h1>
         <h1 className={style.projectsContainerTitle}> Projects</h1>
-      </header>
+      </div>
       <section className={style.projectCont}>
-        <div className={style.projectTextBox}>
+        <div key={id} className={style.projectTextBox}>
           <div className={style.projectTextCont}>
             <div className={style.projectTextTitleCont}>
               <Link
@@ -47,7 +47,11 @@ const Projects = () => {
             ) : (
               <div className={style.projectGitCont}>
                 <Link to={selectedPrj.git} target='_blank'>
-                  <img className={style.projectGit} src={gitLogo} />
+                  <img
+                    className={style.projectGit}
+                    src={gitLogo}
+                    alt='Git Logo'
+                  />
                 </Link>
               </div>
             )}
@@ -58,9 +62,13 @@ const Projects = () => {
           {options.map((project, i) => {
             return (
               <div
-                onClick={() => {
-                  setSelectedPrj(project);
-                }}
+                onClick={
+                  selectedPrj.title === project.title
+                    ? () => {}
+                    : () => {
+                        setSelectedPrj(project);
+                      }
+                }
                 key={i}
                 className={style.projectImgCont}
               >

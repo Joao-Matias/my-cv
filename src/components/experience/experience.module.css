@@ -1,0 +1,48 @@
+.experienceContainer {
+  width: 75%;
+
+  margin-top: 10rem;
+}
+
+.experienceContainerHeader {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.experienceContainerNumeral {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.experienceContainerTitle {
+  display: flex;
+
+  justify-content: center;
+
+  font-size: 4rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.experienceContainerTitle,
+.experienceContainerNumeral {
+  color: #14213d;
+}
+
+.experiencesContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+.experiencesBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.experiencesBullets {
+  font-size: 2rem;
+}

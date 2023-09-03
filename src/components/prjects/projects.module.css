@@ -2,20 +2,26 @@
   width: 75%;
 
   margin-top: 10rem;
+  height: 75rem;
+  background-color: white;
 }
 
 .projectsContainerHeader {
   display: flex;
-  width: 17%;
+  width: 50%;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .projectsContainerNumeral {
   font-size: 4.5rem;
+  margin: 0;
 }
 
 .projectsContainerTitle {
   display: flex;
+  margin: 0;
+  margin-left: 1rem;
 
   justify-content: center;
 
@@ -44,6 +50,18 @@
 
   margin-top: 5rem;
   margin-bottom: 5rem;
+
+  animation: rollOut 0.5s ease-in-out;
+}
+
+@keyframes rollOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .projectTextTitleCont {
@@ -92,8 +110,7 @@
 
   font-size: 2.8rem;
   color: #14213d;
-  /* background-color: #e5e5e5; */
-  /* border: 0.2rem solid #14213d; */
+
   border: none;
   border-radius: 1rem;
 
@@ -134,10 +151,10 @@
 
 .projectImgCont {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .projectImg {
+  cursor: pointer;
   display: flex;
   width: 100%;
 

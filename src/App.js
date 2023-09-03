@@ -1,3 +1,4 @@
+import Experience from './components/experience';
 import Landing from './components/landing';
 import Projects from './components/prjects';
 
@@ -7,6 +8,7 @@ function App() {
       <Landing />
       <main>
         <Projects />
+        <Experience />
       </main>
     </>
   );
