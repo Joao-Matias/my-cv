@@ -1,5 +1,5 @@
 import style from './landing.module.css';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Nav from '../nav';
 import userImg from '../../img/JMatias-pic.jpg';

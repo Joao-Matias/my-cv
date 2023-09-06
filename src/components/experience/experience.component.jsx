@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import style from './experience.module.css';
 import { TbPointFilled } from 'react-icons/tb';
 
@@ -7,6 +7,7 @@ import getExperienceOptions from '../../services/get-experience-options';
 const Experience = () => {
   const experiences = getExperienceOptions();
   const [scrollTop, setScrollTop] = useState(0);
+  const titlesRef = useRef([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +21,19 @@ const Experience = () => {
     };
   }, []);
 
+  const expRef = (el) => {
+    if (el && !titlesRef.current.includes(el)) {
+      titlesRef.current.push(el);
+    }
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    console.log(entries);
+  });
+  console.log(titlesRef);
+
+  observer.observe(titlesRef[0]);
+
   return (
     <section className={style.experienceContainer}>
       <div className={style.experienceContainerHeader}>
@@ -31,6 +45,7 @@ const Experience = () => {
           return (
             <div className={style.experiencesBox} key={i}>
               <div
+                ref={expRef}
                 className={
                   scrollTop >= 1250
                     ? style.experiencesContAnimation

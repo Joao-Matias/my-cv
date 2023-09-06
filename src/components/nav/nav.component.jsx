@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import style from './nav.module.css';
 
@@ -17,7 +17,6 @@ const Nav = (props) => {
 
   const scrollToViewExperiences = (e) => {
     e.preventDefault();
-
     window.scrollTo({ top: 1687, behavior: 'smooth' });
   };
 
@@ -39,32 +38,26 @@ const Nav = (props) => {
       <nav className={style.landingNavMenu}>
         <ul className={style.landingNavMenuList}>
           <li className={style.landingNavMenuBox}>
-            <a
+            <button
               className={style.landingMenuTitles}
               onClick={scrollToViewProjects}
-              href='#'
             >
               Projects
-            </a>
+            </button>
           </li>
           <li className={style.landingNavMenuBox}>
-            <a
+            <button
               className={style.landingMenuTitles}
               onClick={scrollToViewExperiences}
-              href='#'
             >
               Experience
-            </a>
+            </button>
           </li>
           <li className={style.landingNavMenuBox}>
-            <a className={style.landingMenuTitles} href='#'>
-              Education
-            </a>
+            <button className={style.landingMenuTitles}>Education</button>
           </li>
           <li className={style.landingNavMenuBox}>
-            <a className={style.landingMenuTitles} href='#'>
-              Contact
-            </a>
+            <button className={style.landingMenuTitles}>Contact</button>
           </li>
         </ul>
       </nav>

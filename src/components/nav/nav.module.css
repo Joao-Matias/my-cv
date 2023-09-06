@@ -86,10 +86,6 @@
   padding: 0;
 }
 
-.landingNavMenuBox {
-  cursor: pointer;
-}
-
 .landingNavMenuBox:hover .landingMenuTitles {
   color: #4966a5;
 }
@@ -98,6 +94,10 @@
   font-size: 1.6rem;
   font-family: inherit;
   font-weight: 600;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
 
   text-decoration: none;
 }
