@@ -10,6 +10,7 @@ const getExperienceOptions = () => {
       ],
       from: 'Nov 2022',
       to: 'Present',
+      intoView: 1250,
     },
     {
       company: 'Complete Technical Solutions',
@@ -22,6 +23,7 @@ const getExperienceOptions = () => {
       ],
       from: 'Jan 2020',
       to: 'Nov 2022',
+      intoView: 1366,
     },
     {
       company: 'Hotel Felix',
@@ -37,6 +39,7 @@ const getExperienceOptions = () => {
       ],
       from: 'Apr 2019',
       to: 'Dec 2019',
+      intoView: 1608,
     },
     {
       company: 'Hotel Felix',
@@ -51,6 +54,7 @@ const getExperienceOptions = () => {
       ],
       from: 'Sept 2018',
       to: 'Apr 2019',
+      intoView: 1895,
     },
 
     {
@@ -65,6 +69,7 @@ const getExperienceOptions = () => {
       ],
       from: 'Jan 2018',
       to: 'Aug 2018',
+      intoView: 2144,
     },
   ];
 };
