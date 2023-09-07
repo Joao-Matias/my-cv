@@ -20,6 +20,13 @@ const Nav = (props) => {
     window.scrollTo({ top: 1687, behavior: 'smooth' });
   };
 
+  const scrollToViewEducation = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 3176, behavior: 'smooth' });
+  };
+
+  console.log(window.scrollY);
+
   return (
     <header
       className={scrollTop >= 710 ? style.landingNavStick : style.landingNav}
@@ -54,7 +61,12 @@ const Nav = (props) => {
             </button>
           </li>
           <li className={style.landingNavMenuBox}>
-            <button className={style.landingMenuTitles}>Education</button>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewEducation}
+            >
+              Education
+            </button>
           </li>
           <li className={style.landingNavMenuBox}>
             <button className={style.landingMenuTitles}>Contact</button>

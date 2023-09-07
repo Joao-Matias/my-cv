@@ -1,0 +1,34 @@
+.educationContainer {
+  width: 75%;
+
+  margin-top: 7rem;
+  height: 100rem;
+}
+
+.educationContainerHeader {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.educationContainerNumeral {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.educationContainerTitle {
+  display: flex;
+
+  justify-content: center;
+
+  font-size: 4rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.educationContainerTitle,
+.educationContainerNumeral {
+  color: #14213d;
+}

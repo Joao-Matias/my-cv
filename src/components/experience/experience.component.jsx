@@ -19,7 +19,6 @@ const Experience = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  console.log(window.scrollY);
 
   return (
     <section className={style.experienceContainer}>
