@@ -2,7 +2,6 @@
   width: 75%;
 
   margin-top: 7rem;
-  height: 100rem;
 }
 
 .educationContainerHeader {
@@ -31,4 +30,54 @@
 .educationContainerTitle,
 .educationContainerNumeral {
   color: #14213d;
+}
+
+.educationTextBox {
+  width: 100%;
+
+  margin-top: 10rem;
+}
+
+.educationCourseCont {
+  list-style: none;
+}
+
+.educationCourseCont li:before {
+  content: '•';
+  font-size: 1rem;
+}
+
+.educationCourseBox {
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 2rem;
+
+  justify-content: space-around;
+
+  width: 75%;
+}
+
+.educationCourse {
+  font-size: 1.8rem;
+  margin: 0;
+
+  margin-left: 4rem;
+}
+
+.educationInstitution {
+  margin: 0;
+  margin-left: 1.5rem;
+}
+
+.educationInstitution,
+.educationDates {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.educationDatesBox {
+  display: flex;
+  margin-left: 2rem;
 }

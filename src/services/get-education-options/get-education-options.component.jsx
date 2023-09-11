@@ -2,57 +2,27 @@ const getEducationOptions = () => {
   return [
     {
       institution: 'Udemy',
-      studiedTitle: 'React',
+      studiedTitle: 'React - The Complete Guide 2023,',
       from: '2022',
       to: '2023',
-      studiedTopics: [
-        'React fundamentals: components, JSX, props, events, forms, state',
-        'React Hooks',
-        'How to debug React apps',
-        'Class-based components and functional components',
-        'Redux & Redux Toolkit',
-      ],
     },
     {
       institution: 'Udemy',
-      studiedTitle: 'Javascript',
-      from: '2021',
-      to: '2022',
-      studiedTopics: [
-        'Javascript fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings',
-        'Modern ES6+: arrow functions, destructuring, spread operator, optional chaining',
-        'Modern OOP: Classes, constructors, prototypal inheritance, encapsulation',
-        'This keyword',
-        'Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs',
-      ],
-    },
-    {
-      institution: 'Udemy',
-      studiedTitle: 'Html & Css',
+      studiedTitle: 'Build Responsive Real-World Websites with HTML and CSS,',
       from: '2022',
       to: '2022',
-      studiedTopics: [
-        'Modern, semantic and accessible HTML5',
-        'Flexbox and CSS Grid for layout',
-        'How to plan, sketch, design, build, test, and optimize a professional website',
-        'How to make websites work on every possible mobile device (responsive design)',
-      ],
+    },
+    {
+      institution: 'Udemy',
+      studiedTitle: 'The Complete Javascript Course 2022: From Zero to Expert,',
+      from: '2021',
+      to: '2022',
     },
     {
       institution: 'IADE - Creative University, Lisbon',
-      studiedTitle: 'Marketing & Advserting BA',
+      studiedTitle: 'BA Marketing & Advserting (1st),',
       from: '2013',
       to: '2016',
-      studiedTopics: [
-        'Prospecting market',
-        'Target definition',
-        'Strategy',
-        'Media planning',
-        'Contingency',
-        'Market Research',
-        'Product Management',
-        'Web Design',
-      ],
     },
   ];
 };

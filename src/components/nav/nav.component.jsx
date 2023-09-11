@@ -25,8 +25,6 @@ const Nav = (props) => {
     window.scrollTo({ top: 3176, behavior: 'smooth' });
   };
 
-  console.log(window.scrollY);
-
   return (
     <header
       className={scrollTop >= 710 ? style.landingNavStick : style.landingNav}
