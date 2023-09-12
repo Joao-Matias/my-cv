@@ -25,6 +25,11 @@ const Nav = (props) => {
     window.scrollTo({ top: 3176, behavior: 'smooth' });
   };
 
+  const scrollToViewContact = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 3821, behavior: 'smooth' });
+  };
+
   return (
     <header
       className={scrollTop >= 710 ? style.landingNavStick : style.landingNav}
@@ -67,7 +72,12 @@ const Nav = (props) => {
             </button>
           </li>
           <li className={style.landingNavMenuBox}>
-            <button className={style.landingMenuTitles}>Contact</button>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewContact}
+            >
+              Contact
+            </button>
           </li>
         </ul>
       </nav>

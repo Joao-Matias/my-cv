@@ -2,6 +2,8 @@
   width: 75%;
 
   margin-top: 7rem;
+  margin-bottom: 10rem;
+  height: 50rem;
 }
 
 .educationContainerHeader {
@@ -28,7 +30,10 @@
 }
 
 .educationContainerTitle,
-.educationContainerNumeral {
+.educationContainerNumeral,
+.educationCourse,
+.educationInstitution,
+.educationDates {
   color: #14213d;
 }
 
