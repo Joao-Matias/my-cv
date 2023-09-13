@@ -9,7 +9,6 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { TfiEmail } from 'react-icons/tfi';
 
 import userImg from '../../img/JMatias-pic2.jpeg';
-import { Fragment } from 'react';
 
 const Contact = () => {
   return (

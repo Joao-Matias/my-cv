@@ -2,6 +2,8 @@ import React from 'react';
 
 import style from './nav.module.css';
 
+import userImg from '../../img/JMatias-pic.jpg';
+
 const Nav = (props) => {
   const { scrollTop } = props;
 
@@ -36,7 +38,24 @@ const Nav = (props) => {
     >
       <div className={style.landingNavNameBox}>
         <div onClick={scrollToViewStart} className={style.landingNavName}>
-          <h3 className={style.landingNavNameFirst}>J</h3>
+          <div className={style.landingImgBox}>
+            <img
+              src={userImg}
+              alt='This cv creator'
+              className={
+                scrollTop >= 710 ? style.landingImgStick : style.landingImg
+              }
+            />
+          </div>
+          <h3
+            className={
+              scrollTop >= 710
+                ? style.landingNavNameFirstStick
+                : style.landingNavNameFirst
+            }
+          >
+            J
+          </h3>
           <h3 className={style.landingNavNameRest}>oao Matias</h3>
         </div>
 
