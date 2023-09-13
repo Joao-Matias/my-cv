@@ -129,7 +129,6 @@
 
 .projectGitCont {
   cursor: pointer;
-  margin: 0;
 }
 
 .projectGit {
@@ -159,7 +158,6 @@
 
   transition: all 0.3s;
 
-  object-fit: cover;
   transition: all 0.2s;
   opacity: 0.7;
 }
@@ -187,4 +185,17 @@
 .projectImgCont:hover .projectImg {
   scale: 1.2;
   opacity: 1;
+}
+
+.projectVisit {
+  font-size: 2rem;
+  color: #14213d;
+}
+
+.projectVisit:hover {
+  color: #2b4783;
+}
+
+.projectVisitBox {
+  text-decoration: none;
 }

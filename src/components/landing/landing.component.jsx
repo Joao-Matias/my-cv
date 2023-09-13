@@ -46,8 +46,8 @@ const Landing = () => {
           <h2>
             My name is Joao Matias and I'm a self taught Frontend Dev.
             <br />
-            I've always had an interest in web development and recently have
-            decided to pursue this as a career. Througth a series of different
+            I've always had an interest in web development and have recently
+            decided to pursue this as a career. Through a series of different
             courses, own projects and guidance from some web dev friends, I've
             been improving my codding skills and I'm now ready to embark in a
             new challenge.

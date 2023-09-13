@@ -56,15 +56,26 @@ const Projects = () => {
             {!selectedPrj.git ? (
               ''
             ) : (
-              <div className={style.projectGitCont}>
-                <Link to={selectedPrj.git} target='_blank'>
-                  <img
-                    className={style.projectGit}
-                    src={gitLogo}
-                    alt='Git Logo'
-                  />
+              <>
+                <div className={style.projectGitCont}>
+                  <Link to={selectedPrj.git} target='_blank'>
+                    <img
+                      className={style.projectGit}
+                      src={gitLogo}
+                      alt='Git Logo'
+                    />
+                  </Link>
+                </div>
+                <Link
+                  className={style.projectVisitBox}
+                  to={selectedPrj.git}
+                  target='_blank'
+                >
+                  <p className={style.projectVisit}>
+                    Go to {selectedPrj.title}
+                  </p>
                 </Link>
-              </div>
+              </>
             )}
           </div>
         </div>

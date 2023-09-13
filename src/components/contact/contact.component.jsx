@@ -20,9 +20,9 @@ const Contact = () => {
             <h1 className={style.contactContainerTitle}> Contact</h1>
           </div>
           <p className={style.contactParagraph}>
-            Drop me an email and let's discuss any question that you might have.
-            Also have a look at my X account where I update my recent activity
-            in my coding journey.
+            Drop me an email and let's discuss any questions you might have. You
+            can also have a look at my X account where I post updates of
+            activity in my coding journey.
           </p>
           <div className={style.contactLinks}>
             <div className={style.contactGitBox}>
