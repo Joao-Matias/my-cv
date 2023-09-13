@@ -57,7 +57,10 @@
   width: 10%;
 }
 
-.contactEmailBox {
+.contactDetailsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 50%;
 
   padding: 5rem;
@@ -65,4 +68,45 @@
   background-color: #e5e5e5;
   border: 0.5rem solid #14213d;
   border-radius: 5rem;
+}
+
+.contactImgBox {
+  display: flex;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.contactImg {
+  width: 70%;
+  border-radius: 5rem;
+}
+
+.contactDetailsCont {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contactPhoneCont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.contactContacts {
+  margin: 0;
+}
+
+.contactNumber {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #14213d;
 }

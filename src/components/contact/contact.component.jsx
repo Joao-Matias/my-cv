@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { IconContext } from 'react-icons';
 
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { FaTwitter } from 'react-icons/fa6';
+import { AiFillGithub, AiFillLinkedin, AiOutlinePhone } from 'react-icons/ai';
+import { FaXTwitter } from 'react-icons/fa6';
+import { TfiEmail } from 'react-icons/tfi';
+
+import userImg from '../../img/JMatias-pic2.jpeg';
+import { Fragment } from 'react';
 
 const Contact = () => {
   return (
@@ -42,14 +46,34 @@ const Contact = () => {
             <div className={style.contactLinkedinBox}>
               <IconContext.Provider value={{ color: '#e5e5e5', size: '4rem' }}>
                 <Link to={'https://twitter.com/JoaoDMatias'} target='_blank'>
-                  <FaTwitter />
+                  <FaXTwitter />
                 </Link>
               </IconContext.Provider>
             </div>
           </div>
         </div>
-        <div className={style.contactEmailBox}>
-          <h1>Ola</h1>
+        <div className={style.contactDetailsBox}>
+          <div className={style.contactImgBox}>
+            <img
+              src={userImg}
+              alt='This cv creator'
+              className={style.contactImg}
+            />
+          </div>
+          <div className={style.contactDetailsCont}>
+            <div className={style.contactPhoneCont}>
+              <IconContext.Provider value={{ color: '#14213d', size: '3rem' }}>
+                <AiOutlinePhone className={style.contactContacts} />
+              </IconContext.Provider>
+              <p className={style.contactNumber}>07853412421</p>
+            </div>
+            <div className={style.contactPhoneCont}>
+              <IconContext.Provider value={{ color: '#14213d', size: '3rem' }}>
+                <TfiEmail className={style.contactContacts} />
+                <p className={style.contactNumber}>jdmatias@live.com</p>
+              </IconContext.Provider>
+            </div>
+          </div>
         </div>
       </div>
     </section>
