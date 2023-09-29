@@ -127,3 +127,60 @@
 
   text-decoration: none;
 }
+
+.landingNavMenuListIcon {
+  display: flex;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 1;
+  transition: all 0.4s;
+  transform: translateY(100%);
+}
+
+.landingNavMenuListIconHidden {
+  display: flex;
+  cursor: pointer;
+  z-index: 3;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.landingNavMenuListMobile {
+  list-style-type: none;
+  transition: all 0.5s;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(-20%);
+  line-height: 2rem;
+}
+
+.landingNavMenuListMobileHidden {
+  list-style-type: none;
+  transform: translateY(100%);
+  transition: all 0.5s;
+  z-index: 1;
+  opacity: 0;
+  line-height: 2rem;
+}
+
+.landingNavMenuListMobileTitle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #14213d;
+}
+
+.landingNavMenuListMobileTitle:hover {
+  color: #4966a5;
+}
+
+.landingNavMenuListClose {
+  position: absolute;
+  right: 0%;
+  top: -20%;
+  cursor: pointer;
+}
+
+.landingNavMenuListCloseHidden {
+  position: absolute;
+}

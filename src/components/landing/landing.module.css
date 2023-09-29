@@ -42,19 +42,19 @@
   width: 50%;
 }
 
-.landingHeroDescription p {
+.landingHeroDescription quote {
   font-size: 5rem;
   margin: 4rem 1rem;
 }
 
-.landingHeroDescription h2 {
+.landingHeroDescription p {
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
 }
 
 .landingHeroDescription p,
-.landingHeroDescription h2 {
+.landingHeroDescription quote {
   color: #14213d;
 }
 

@@ -1,14 +1,14 @@
-import style from './landing.module.css';
-import React, { useEffect, useState } from 'react';
+import style from "./landing.module.css";
+import React, { useEffect, useState } from "react";
 
-import Nav from '../nav';
-import userImg from '../../img/JMatias-pic.jpg';
+import Nav from "../nav";
+import userImg from "../../img/JMatias-pic.jpg";
 
-import jsLogo from '../../img/logo-javascript.svg';
-import reactLogo from '../../img/logo-react.svg';
-import cssLogo from '../../img/logo-css3.svg';
-import htmlLogo from '../../img/logo-html5.svg';
-import gitLogo from '../../img/logo-github.svg';
+import jsLogo from "../../img/logo-javascript.svg";
+import reactLogo from "../../img/logo-react.svg";
+import cssLogo from "../../img/logo-css3.svg";
+import htmlLogo from "../../img/logo-html5.svg";
+import gitLogo from "../../img/logo-github.svg";
 
 const Landing = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -18,10 +18,10 @@ const Landing = () => {
       setScrollTop(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -36,14 +36,14 @@ const Landing = () => {
         <div className={style.landingImgBox}>
           <img
             src={userImg}
-            alt='This cv creator'
+            alt="This cv creator"
             className={style.landingImgScaled}
           />
         </div>
 
         <div className={style.landingHeroDescription}>
-          <p>Hello</p>
-          <h2>
+          <quote>Hello</quote>
+          <p>
             My name is Joao Matias and I'm a self taught Frontend Dev.
             <br />
             I've always had an interest in web development and have recently
@@ -54,7 +54,7 @@ const Landing = () => {
             <br />
             <br />
             Exciting times ahead.
-          </h2>
+          </p>
         </div>
       </section>
 
@@ -63,27 +63,27 @@ const Landing = () => {
         <div className={style.landingJobTech}>
           <img
             src={jsLogo}
-            alt='Javascript Logo'
+            alt="Javascript Logo"
             className={style.landingJobTechLogos}
           />
           <img
             src={reactLogo}
-            alt='React Logo'
+            alt="React Logo"
             className={style.landingJobTechLogos}
           />
           <img
             src={cssLogo}
-            alt='Css Logo'
+            alt="Css Logo"
             className={style.landingJobTechLogos}
           />
           <img
             src={htmlLogo}
-            alt='HTML Logo'
+            alt="HTML Logo"
             className={style.landingJobTechLogos}
           />
           <img
             src={gitLogo}
-            alt='GitHub Logo'
+            alt="GitHub Logo"
             className={style.landingJobTechLogos}
           />
         </div>
