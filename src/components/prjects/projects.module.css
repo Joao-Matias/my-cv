@@ -52,6 +52,8 @@
   margin-bottom: 5rem;
 
   animation: rollOut 0.5s ease-in-out;
+
+  gap: 3rem;
 }
 
 @keyframes rollOut {
@@ -120,7 +122,7 @@
   display: flex;
   flex-direction: row;
 
-  width: 80%;
+  width: 50%;
 
   align-items: center;
 
@@ -198,4 +200,80 @@
 
 .projectVisitBox {
   text-decoration: none;
+}
+
+@media (max-width: 90em) {
+  .projectLinkCont {
+    width: 70%;
+  }
+}
+
+@media (max-width: 64em) {
+  .projectsContainer {
+    width: 90%;
+    height: auto;
+  }
+
+  .projectImgsBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectTextBox {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .projectCont {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+
+  .projectImgsBox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectsContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectTextBox {
+    width: 90%;
+    gap: 3rem;
+  }
+
+  .projectLinkCont {
+    width: 60%;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .projectsContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectCont {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+
+  .projectTextBox {
+    width: 90%;
+    gap: 3rem;
+  }
+
+  .projectImgsBox {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectLinkCont {
+    width: 70%;
+  }
 }

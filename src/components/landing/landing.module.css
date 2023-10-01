@@ -92,6 +92,10 @@
   .landingJobTech {
     width: 70%;
   }
+
+  .landingJobTechLogos {
+    width: 5.5rem;
+  }
 }
 
 @media (max-width: 48em) {
@@ -165,6 +169,9 @@
     text-align: center;
   }
 
+  .landingJobTech {
+    width: 100%;
+  }
   .landingJobTechLogos {
     width: 5rem;
   }
