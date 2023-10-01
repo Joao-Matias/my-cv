@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import style from './experience.module.css';
-import { TbPointFilled } from 'react-icons/tb';
+import React, { useEffect, useState } from "react";
+import style from "./experience.module.css";
+import { TbPointFilled } from "react-icons/tb";
 
-import getExperienceOptions from '../../services/get-experience-options';
+import getExperienceOptions from "../../services/get-experience-options";
 
 const Experience = () => {
   const experiences = getExperienceOptions();
@@ -13,18 +13,18 @@ const Experience = () => {
       setScrollTop(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <section className={style.experienceContainer}>
       <div className={style.experienceContainerHeader}>
-        <h1 className={style.experienceContainerNumeral}>02</h1>
-        <h1 className={style.experienceContainerTitle}> Experience</h1>
+        <h2 className={style.experienceContainerNumeral}>02</h2>
+        <h2 className={style.experienceContainerTitle}> Experience</h2>
       </div>
       <div className={style.experiencesContainer}>
         {experiences.map((experience, i) => {

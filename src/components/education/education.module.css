@@ -48,7 +48,7 @@
 }
 
 .educationCourseCont li:before {
-  content: '•';
+  content: "•";
   font-size: 1rem;
 }
 
@@ -71,6 +71,16 @@
   margin-left: 4rem;
 }
 
+.educationCourseLink {
+  margin: 0;
+  margin-left: 4rem;
+  text-decoration: none;
+}
+
+.educationCourseLink:hover .educationCourse {
+  color: #4966a5;
+}
+
 .educationInstitution {
   margin: 0;
   margin-left: 1.5rem;
@@ -85,4 +95,139 @@
 .educationDatesBox {
   display: flex;
   margin-left: 2rem;
+}
+
+@media (max-width: 90em) {
+  .educationContainer {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .educationCourseBox {
+    width: 70%;
+  }
+
+  .educationDatesBox {
+    width: 10%;
+  }
+
+  .educationInstitution {
+    width: 25%;
+  }
+
+  .educationCourseLink {
+    margin: 0;
+    width: 65%;
+  }
+}
+
+@media (max-width: 64em) {
+  .educationContainer {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .educationCourseBox {
+    width: 90%;
+  }
+
+  .educationDatesBox {
+    width: 15%;
+  }
+
+  .educationInstitution {
+    width: 25%;
+  }
+
+  .educationCourseLink {
+    margin: 0;
+    width: 60%;
+  }
+}
+
+@media (max-width: 48em) {
+  .educationContainer {
+    width: 95%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .educationTextBox {
+    margin-top: 7rem;
+  }
+
+  .educationCourseCont {
+    list-style: none;
+    padding: 0;
+  }
+
+  .educationCourseBox {
+    width: 90%;
+    margin-top: 3rem;
+  }
+
+  .educationDatesBox {
+    width: 15%;
+  }
+
+  .educationInstitution {
+    width: 15%;
+  }
+
+  .educationCourseLink {
+    margin: 0;
+    width: 70%;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .educationContainer {
+    width: 95%;
+    margin-top: 3rem;
+  }
+
+  .educationCourseCont {
+    list-style: none;
+    padding: 0;
+  }
+
+  .educationCourseLink {
+    margin: 0;
+    width: 50%;
+  }
+
+  .educationCourseBox {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .educationCourseCont li:before {
+    content: "•";
+    font-size: 1rem;
+    display: none;
+  }
+
+  .educationCourse {
+    margin: 0;
+    width: 100%;
+  }
+
+  .educationTextBox {
+    margin-top: 5rem;
+  }
+
+  .educationDatesBox {
+    width: 30%;
+  }
+
+  .educationInstitution {
+    width: 20%;
+  }
+
+  .educationCourseLink {
+    margin: 0;
+    width: 50%;
+  }
 }
