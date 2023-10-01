@@ -147,3 +147,71 @@
 .experiencesResponsabilities {
   color: #14213d;
 }
+
+@media (max-width: 64em) {
+  .experiencesYearsCont {
+    width: 50%;
+  }
+}
+
+@media (max-width: 48em) {
+  .experiencesBox {
+    width: 95%;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .experiencesBulletsCont {
+    display: none;
+  }
+
+  .experiencesContAnimation {
+    width: 100%;
+  }
+
+  .experiencesYearsCont {
+    width: 30%;
+  }
+
+  .experiencesCompanyContAnimation {
+    width: 80%;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .experiencesContainer {
+    margin-top: 3rem;
+
+    padding-bottom: 7rem;
+  }
+
+  .experiencesBox {
+    width: 95%;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .experiencesYearsCont {
+    width: 50%;
+  }
+
+  .experiencesResponsabilitiesCont {
+    margin-top: 3.5rem;
+  }
+
+  .experiencesResponsabilities {
+    margin-top: 1rem;
+  }
+
+  .experiencesBulletsCont {
+    display: none;
+  }
+
+  .experiencesContAnimation {
+    width: 100%;
+  }
+
+  .experiencesCompanyContAnimation {
+    width: 100%;
+  }
+}

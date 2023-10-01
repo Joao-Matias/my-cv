@@ -206,6 +206,11 @@
   .projectLinkCont {
     width: 70%;
   }
+
+  .projectImgsBox {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 64em) {
