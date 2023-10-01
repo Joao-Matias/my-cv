@@ -152,6 +152,7 @@
     width: 95%;
     margin-top: 3rem;
     margin-bottom: 5rem;
+    height: auto;
   }
 
   .educationTextBox {
@@ -186,6 +187,7 @@
   .educationContainer {
     width: 95%;
     margin-top: 3rem;
+    height: auto;
   }
 
   .educationCourseCont {

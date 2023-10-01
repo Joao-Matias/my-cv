@@ -27,17 +27,17 @@
 
 .contactContainerHeader {
   display: flex;
-  width: 35%;
+  width: 60%;
 }
 
 .contactContainerNumeral {
   color: #e5e5e5;
-  font-size: 1.7rem;
+  font-size: 3.7rem;
 }
 
 .contactContainerTitle {
   color: #e5e5e5;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .contactParagraph {
@@ -79,7 +79,7 @@
 }
 
 .contactImg {
-  width: 70%;
+  width: 90%;
   border-radius: 5rem;
 }
 
@@ -109,4 +109,116 @@
   align-items: center;
   font-size: 2rem;
   color: #14213d;
+}
+
+.contactNumberLink {
+  text-decoration: none;
+  color: black;
+}
+
+.contactNumberLink:hover .contactNumber {
+  color: #4966a5;
+}
+
+@media (max-width: 90em) {
+  .contactBox {
+    width: 60%;
+    height: auto;
+  }
+  .contactImg {
+    width: 100%;
+  }
+
+  .contactTextBox {
+    padding: 3rem;
+  }
+
+  .contactLinks {
+    width: 70%;
+  }
+}
+
+@media (max-width: 64em) {
+  .contactBox {
+    width: 75%;
+    height: auto;
+  }
+
+  .contactImg {
+    width: 100%;
+  }
+
+  .contactDetailsCont {
+    width: 90%;
+  }
+
+  .contactDetailsBox {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .contactContainer {
+    height: auto;
+  }
+  .contactBox {
+    width: 75%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contactTextBox {
+    width: 80%;
+    gap: 5rem;
+  }
+
+  .contactContainerHeader {
+    width: 60%;
+  }
+
+  .contactLinks {
+    width: 70%;
+  }
+
+  .contactDetailsBox {
+    width: 100%;
+  }
+
+  .contactDetailsCont {
+    width: 70%;
+  }
+
+  .contactImg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .contactBox {
+    width: 95%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contactTextBox {
+    width: 100%;
+    gap: 5rem;
+  }
+
+  .contactContainerHeader {
+    margin: 0;
+    width: 100%;
+  }
+
+  .contactDetailsBox {
+    width: 100%;
+  }
+
+  .contactImg {
+    width: 100%;
+  }
+
+  .contactDetailsCont {
+    width: 90%;
+  }
 }
