@@ -70,7 +70,7 @@ const Nav = (props) => {
               }
             />
           </div>
-          <h3
+          <h1
             className={
               scrollTop >= 710
                 ? style.landingNavNameFirstStick
@@ -78,12 +78,12 @@ const Nav = (props) => {
             }
           >
             J
-          </h3>
-          <h3 className={style.landingNavNameRest}>oao Matias</h3>
+          </h1>
+          <h1 className={style.landingNavNameRest}>oao Matias</h1>
         </div>
 
         <div className={style.landingNavJobBox}>
-          <h3 className={style.landingNavJob}>Junior FrontEnd Dev</h3>
+          <h2 className={style.landingNavJob}>Junior FrontEnd Dev</h2>
         </div>
       </div>
 
