@@ -110,6 +110,7 @@
   display: flex;
   list-style-type: none;
   padding: 0;
+  width: 80%;
 }
 
 .landingNavMenuBox:hover .landingMenuTitles {
@@ -129,7 +130,7 @@
 }
 
 .landingNavMenuListIcon {
-  display: flex;
+  display: none;
   cursor: pointer;
   z-index: 3;
   opacity: 1;
@@ -138,7 +139,7 @@
 }
 
 .landingNavMenuListIconHidden {
-  display: flex;
+  display: none;
   cursor: pointer;
   z-index: 3;
   transform: translateY(-100%);
@@ -151,8 +152,10 @@
   transition: all 0.5s;
   z-index: 1;
   opacity: 1;
-  transform: translateY(-20%);
-  line-height: 2rem;
+  transform: translateY(-10%);
+  line-height: 2.5rem;
+  padding: 0;
+  display: none;
 }
 
 .landingNavMenuListMobileHidden {
@@ -161,11 +164,12 @@
   transition: all 0.5s;
   z-index: 1;
   opacity: 0;
-  line-height: 2rem;
+  line-height: 2.5rem;
+  display: none;
 }
 
 .landingNavMenuListMobileTitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #14213d;
 }
@@ -183,4 +187,52 @@
 
 .landingNavMenuListCloseHidden {
   position: absolute;
+}
+
+@media (max-width: 64em) {
+  .landingNavNameBox {
+    width: 35%;
+  }
+}
+
+@media (max-width: 48em) {
+  .landingNavMenuListIcon,
+  .landingNavMenuListIconHidden {
+    display: flex;
+  }
+
+  .landingNavMenuList {
+    display: none;
+  }
+
+  .landingNavMenuListMobile,
+  .landingNavMenuListMobileHidden {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .landingNavNameBox {
+    width: 40%;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .landingNavMenuListIcon,
+  .landingNavMenuListIconHidden {
+    display: flex;
+  }
+
+  .landingNavMenuList {
+    display: none;
+  }
+
+  .landingNavMenuListMobile,
+  .landingNavMenuListMobileHidden {
+    width: 100%;
+  }
+
+  .landingNavNameBox {
+    width: 50%;
+  }
 }

@@ -42,7 +42,7 @@ const Landing = () => {
         </div>
 
         <div className={style.landingHeroDescription}>
-          <quote>Hello</quote>
+          <h3>Hello</h3>
           <p>
             My name is Joao Matias and I'm a self taught Frontend Dev.
             <br />

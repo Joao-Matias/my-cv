@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import style from "./nav.module.css";
 
@@ -11,17 +11,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Nav = (props) => {
   const { scrollTop } = props;
-  const [isMobile, setIsMobile] = useState(false);
   const [showListHandler, setShowListHandler] = useState(false);
-
-  useEffect(() => {
-    const width = window.innerWidth;
-    if (width < 375) {
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-    }
-  });
 
   const scrollToViewStart = (e) => {
     e.preventDefault();
@@ -46,6 +36,23 @@ const Nav = (props) => {
   const scrollToViewContact = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 3821, behavior: "smooth" });
+  };
+
+  const handleClickProjects = (e) => {
+    scrollToViewProjects(e);
+    setShowListHandler(false);
+  };
+  const handleClickExperiences = (e) => {
+    scrollToViewExperiences(e);
+    setShowListHandler(false);
+  };
+  const handleClickEducation = (e) => {
+    scrollToViewEducation(e);
+    setShowListHandler(false);
+  };
+  const handleClickContact = (e) => {
+    scrollToViewContact(e);
+    setShowListHandler(false);
   };
 
   return (
@@ -81,94 +88,113 @@ const Nav = (props) => {
       </div>
 
       <nav className={style.landingNavMenu}>
-        {isMobile ? (
-          <ul className={style.landingNavMenuList}>
-            <li className={style.landingNavMenuBox}>
-              <button
-                className={style.landingMenuTitles}
-                onClick={scrollToViewProjects}
-              >
-                Projects
-              </button>
-            </li>
-            <li className={style.landingNavMenuBox}>
-              <button
-                className={style.landingMenuTitles}
-                onClick={scrollToViewExperiences}
-              >
-                Experience
-              </button>
-            </li>
-            <li className={style.landingNavMenuBox}>
-              <button
-                className={style.landingMenuTitles}
-                onClick={scrollToViewEducation}
-              >
-                Education
-              </button>
-            </li>
-            <li className={style.landingNavMenuBox}>
-              <button
-                className={style.landingMenuTitles}
-                onClick={scrollToViewContact}
-              >
-                Contact
-              </button>
-            </li>
-          </ul>
-        ) : (
-          <>
-            <div
-              onClick={() => {
-                setShowListHandler((prevState) => {
-                  return !prevState;
-                });
-              }}
-              className={
-                !showListHandler
-                  ? style.landingNavMenuListIcon
-                  : style.landingNavMenuListIconHidden
-              }
+        <ul className={style.landingNavMenuList}>
+          <li className={style.landingNavMenuBox}>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewProjects}
             >
-              <IconContext.Provider value={{ color: "#14213d", size: "4rem" }}>
-                <BsList />
+              Projects
+            </button>
+          </li>
+          <li className={style.landingNavMenuBox}>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewExperiences}
+            >
+              Experience
+            </button>
+          </li>
+          <li className={style.landingNavMenuBox}>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewEducation}
+            >
+              Education
+            </button>
+          </li>
+          <li className={style.landingNavMenuBox}>
+            <button
+              className={style.landingMenuTitles}
+              onClick={scrollToViewContact}
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+
+        <>
+          <div
+            onClick={() => {
+              setShowListHandler((prevState) => {
+                return !prevState;
+              });
+            }}
+            className={
+              !showListHandler
+                ? style.landingNavMenuListIcon
+                : style.landingNavMenuListIconHidden
+            }
+          >
+            <IconContext.Provider value={{ color: "#14213d", size: "4rem" }}>
+              <BsList />
+            </IconContext.Provider>
+          </div>
+
+          <ul
+            className={
+              showListHandler
+                ? style.landingNavMenuListMobile
+                : style.landingNavMenuListMobileHidden
+            }
+          >
+            <div
+              className={style.landingNavMenuListClose}
+              onClick={() => {
+                setShowListHandler(false);
+              }}
+            >
+              <IconContext.Provider
+                value={{ color: "#14213d", size: "1.5rem" }}
+              >
+                <AiOutlineCloseCircle />
               </IconContext.Provider>
             </div>
 
-            <ul
-              className={
-                showListHandler
-                  ? style.landingNavMenuListMobile
-                  : style.landingNavMenuListMobileHidden
-              }
+            <li
+              className={style.landingNavMenuListMobileTitle}
+              onClick={(e) => {
+                handleClickProjects(e);
+              }}
             >
-              <div
-                className={style.landingNavMenuListClose}
-                onClick={() => {
-                  setShowListHandler(false);
-                }}
-              >
-                <IconContext.Provider
-                  value={{ color: "#14213d", size: "1.5rem" }}
-                >
-                  <AiOutlineCloseCircle />
-                </IconContext.Provider>
-              </div>
-
-              <li
-                className={style.landingNavMenuListMobileTitle}
-                onClick={scrollToViewProjects}
-              >
-                Projects
-              </li>
-              <li className={style.landingNavMenuListMobileTitle}>
-                Experience
-              </li>
-              <li className={style.landingNavMenuListMobileTitle}>Education</li>
-              <li className={style.landingNavMenuListMobileTitle}>Contact</li>
-            </ul>
-          </>
-        )}
+              Projects
+            </li>
+            <li
+              onClick={(e) => {
+                handleClickExperiences(e);
+              }}
+              className={style.landingNavMenuListMobileTitle}
+            >
+              Experience
+            </li>
+            <li
+              onClick={(e) => {
+                handleClickEducation(e);
+              }}
+              className={style.landingNavMenuListMobileTitle}
+            >
+              Education
+            </li>
+            <li
+              onClick={(e) => {
+                handleClickContact(e);
+              }}
+              className={style.landingNavMenuListMobileTitle}
+            >
+              Contact
+            </li>
+          </ul>
+        </>
       </nav>
     </header>
   );
