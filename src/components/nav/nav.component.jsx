@@ -11,31 +11,73 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Nav = (props) => {
   const { scrollTop } = props;
+
+  console.log(scrollTop);
   const [showListHandler, setShowListHandler] = useState(false);
+
+  const width = window.innerWidth;
 
   const scrollToViewStart = (e) => {
     e.preventDefault();
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const scrollToViewProjects = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 747, behavior: "smooth" });
+    if (width < "376") {
+      window.scrollTo({ top: 1143, behavior: "smooth" });
+    }
+    if (width < "769") {
+      window.scrollTo({ top: 1049, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 747, behavior: "smooth" });
+    }
   };
 
   const scrollToViewExperiences = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 1687, behavior: "smooth" });
+    if (width < "376") {
+      window.scrollTo({ top: 2146, behavior: "smooth" });
+    }
+    if (width < "769") {
+      window.scrollTo({ top: 2012, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 1538, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 1687, behavior: "smooth" });
+    }
   };
 
   const scrollToViewEducation = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 3176, behavior: "smooth" });
+    if (width < "376") {
+      window.scrollTo({ top: 4466, behavior: "smooth" });
+    }
+    if (width < "769") {
+      window.scrollTo({ top: 3920, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 3438, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 3176, behavior: "smooth" });
+    }
   };
 
   const scrollToViewContact = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 3821, behavior: "smooth" });
+    if (width < "376") {
+      window.scrollTo({ top: 5179, behavior: "smooth" });
+    }
+    if (width < "769") {
+      window.scrollTo({ top: 4504, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 4029, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: 3821, behavior: "smooth" });
+    }
   };
 
   const handleClickProjects = (e) => {
