@@ -25,73 +25,80 @@ const Nav = (props) => {
 
   const scrollToViewProjects = (e) => {
     e.preventDefault();
-    if (width < "1440") {
+    if (width > "1441") {
       window.scrollTo({ top: 880, behavior: "smooth" });
     }
-    if (width < "1024") {
+    if (width < "1441") {
+      window.scrollTo({ top: 880, behavior: "smooth" });
+    }
+    if (width < "1025") {
       window.scrollTo({ top: 880, behavior: "smooth" });
     }
     if (width < "769") {
-      window.scrollTo({ top: 1000, behavior: "smooth" });
+      window.scrollTo({ top: 1070, behavior: "smooth" });
     }
     if (width < "376") {
       window.scrollTo({ top: 1143, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 880, behavior: "smooth" });
     }
   };
 
   const scrollToViewExperiences = (e) => {
     e.preventDefault();
-    if (width < "1440") {
-      window.scrollTo({ top: 1715, behavior: "smooth" });
+
+    if (width > "1440") {
+      window.scrollTo({ top: 1729, behavior: "smooth" });
     }
-    if (width < "1024") {
-      window.scrollTo({ top: 1637, behavior: "smooth" });
+    if (width < "1441") {
+      window.scrollTo({ top: 1729, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 1575, behavior: "smooth" });
     }
     if (width < "769") {
-      window.scrollTo({ top: 2210, behavior: "smooth" });
+      window.scrollTo({ top: 2047, behavior: "smooth" });
     }
     if (width < "376") {
-      window.scrollTo({ top: 2412, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 1715, behavior: "smooth" });
+      window.scrollTo({ top: 2136, behavior: "smooth" });
     }
   };
 
   const scrollToViewEducation = (e) => {
     e.preventDefault();
-    if (width < "1440") {
-      window.scrollTo({ top: 3280, behavior: "smooth" });
+
+    if (width > "1440") {
+      window.scrollTo({ top: 3341, behavior: "smooth" });
     }
-    if (width < "1024") {
-      window.scrollTo({ top: 3509, behavior: "smooth" });
+    if (width < "1441") {
+      window.scrollTo({ top: 3420, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 3448, behavior: "smooth" });
     }
     if (width < "769") {
-      window.scrollTo({ top: 4130, behavior: "smooth" });
+      window.scrollTo({ top: 3963, behavior: "smooth" });
     }
     if (width < "376") {
-      window.scrollTo({ top: 4740, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 3186, behavior: "smooth" });
+      window.scrollTo({ top: 4455, behavior: "smooth" });
     }
   };
 
   const scrollToViewContact = (e) => {
     e.preventDefault();
-    if (width < "1440") {
-      window.scrollTo({ top: 3904, behavior: "smooth" });
+
+    if (width > "1440") {
+      window.scrollTo({ top: 4003, behavior: "smooth" });
     }
-    if (width < "1024") {
-      window.scrollTo({ top: 4109, behavior: "smooth" });
+    if (width < "1441") {
+      window.scrollTo({ top: 4047, behavior: "smooth" });
+    }
+    if (width < "1025") {
+      window.scrollTo({ top: 4036, behavior: "smooth" });
     }
     if (width < "769") {
-      window.scrollTo({ top: 4677, behavior: "smooth" });
+      window.scrollTo({ top: 4518, behavior: "smooth" });
     }
     if (width < "376") {
-      window.scrollTo({ top: 5413, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 3904, behavior: "smooth" });
+      window.scrollTo({ top: 5138, behavior: "smooth" });
     }
   };
 

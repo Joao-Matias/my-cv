@@ -4,6 +4,8 @@
   margin-top: 10rem;
 
   background-color: #e5e5e5;
+
+  height: 156.1rem;
 }
 
 .experienceContainerHeader {
@@ -156,9 +158,19 @@
   font-size: 1.5rem;
 }
 
+@media (max-width: 90em) {
+  .experienceContainer {
+    height: 168.1rem;
+  }
+}
+
 @media (max-width: 64em) {
   .experiencesYearsCont {
     width: 50%;
+  }
+
+  .experienceContainer {
+    height: 186.1rem;
   }
 }
 
@@ -183,6 +195,10 @@
 
   .experiencesCompanyContAnimation {
     width: 80%;
+  }
+
+  .experienceContainer {
+    height: 188.1rem;
   }
 }
 
@@ -221,5 +237,9 @@
 
   .experiencesCompanyContAnimation {
     width: 100%;
+  }
+
+  .experienceContainer {
+    height: 227.6rem;
   }
 }
