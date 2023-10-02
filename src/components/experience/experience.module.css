@@ -51,10 +51,11 @@
 
 .experiencesCont {
   display: flex;
+  position: absolute;
   flex-direction: column;
 
   width: 48%;
-  transform: translateX(-100%);
+  transform: translateY(100%);
   opacity: 0;
   transition: all 0.7s ease-in;
 }
@@ -64,7 +65,7 @@
   flex-direction: column;
 
   width: 48%;
-  transform: translateX(0%);
+  transform: translateY(0%);
   opacity: 1;
   transition: all 0.7s ease-in;
 }
@@ -105,9 +106,10 @@
 .experiencesCompanyCont {
   display: flex;
   flex-direction: column;
+  position: absolute;
 
   width: 48%;
-  transform: translateX(100%);
+  transform: translateY(100%);
   opacity: 0;
   transition: all 0.7s ease-in;
 }
@@ -117,7 +119,7 @@
   flex-direction: column;
 
   width: 48%;
-  transform: translateX(0%);
+  transform: translateY(0%);
   opacity: 1;
   transition: all 0.7s ease-in;
 }

@@ -26,11 +26,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <section
-      className={
-        scrollTop >= 710 ? style.landingContainerExtra : style.landingContainer
-      }
-    >
+    <section className={style.landingContainer}>
       <Nav scrollTop={scrollTop} />
       <section className={style.landingHero}>
         <div className={style.landingImgBox}>
