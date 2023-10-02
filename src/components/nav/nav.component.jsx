@@ -12,7 +12,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 const Nav = (props) => {
   const { scrollTop } = props;
 
-  console.log(scrollTop);
+  // console.log(scrollTop);
   const [showListHandler, setShowListHandler] = useState(false);
 
   const width = window.innerWidth;
@@ -25,19 +25,19 @@ const Nav = (props) => {
 
   const scrollToViewProjects = (e) => {
     e.preventDefault();
-    if (width > "1441") {
+    if (width > 1441) {
       window.scrollTo({ top: 880, behavior: "smooth" });
     }
-    if (width < "1441") {
+    if (width < 1441) {
       window.scrollTo({ top: 880, behavior: "smooth" });
     }
-    if (width < "1025") {
+    if (width < 1025) {
       window.scrollTo({ top: 880, behavior: "smooth" });
     }
-    if (width < "769") {
+    if (width < 769) {
       window.scrollTo({ top: 1070, behavior: "smooth" });
     }
-    if (width < "376") {
+    if (width < 376) {
       window.scrollTo({ top: 1143, behavior: "smooth" });
     }
   };
@@ -45,19 +45,19 @@ const Nav = (props) => {
   const scrollToViewExperiences = (e) => {
     e.preventDefault();
 
-    if (width > "1440") {
+    if (width > 1440) {
       window.scrollTo({ top: 1729, behavior: "smooth" });
     }
-    if (width < "1441") {
+    if (width < 1441) {
       window.scrollTo({ top: 1729, behavior: "smooth" });
     }
-    if (width < "1025") {
+    if (width < 1025) {
       window.scrollTo({ top: 1575, behavior: "smooth" });
     }
-    if (width < "769") {
+    if (width < 769) {
       window.scrollTo({ top: 2047, behavior: "smooth" });
     }
-    if (width < "376") {
+    if (width < 376) {
       window.scrollTo({ top: 2136, behavior: "smooth" });
     }
   };
@@ -65,19 +65,25 @@ const Nav = (props) => {
   const scrollToViewEducation = (e) => {
     e.preventDefault();
 
-    if (width > "1440") {
+    if (width > 1440) {
       window.scrollTo({ top: 3341, behavior: "smooth" });
     }
-    if (width < "1441") {
+    if (width < 1441) {
       window.scrollTo({ top: 3420, behavior: "smooth" });
     }
-    if (width < "1025") {
+    if (width < 1025) {
       window.scrollTo({ top: 3448, behavior: "smooth" });
     }
-    if (width < "769") {
+    if (width < 769) {
       window.scrollTo({ top: 3963, behavior: "smooth" });
     }
-    if (width < "376") {
+    if (width < "613") {
+      window.scrollTo({ top: 4167, behavior: "smooth" });
+    }
+    if (width < 477) {
+      window.scrollTo({ top: 4377, behavior: "smooth" });
+    }
+    if (width < 376) {
       window.scrollTo({ top: 4455, behavior: "smooth" });
     }
   };
@@ -85,19 +91,26 @@ const Nav = (props) => {
   const scrollToViewContact = (e) => {
     e.preventDefault();
 
-    if (width > "1440") {
+    if (width > 1440) {
       window.scrollTo({ top: 4003, behavior: "smooth" });
     }
-    if (width < "1441") {
+    if (width < 1441) {
       window.scrollTo({ top: 4047, behavior: "smooth" });
     }
-    if (width < "1025") {
+    if (width < 1025) {
       window.scrollTo({ top: 4036, behavior: "smooth" });
     }
-    if (width < "769") {
+    if (width < 769) {
       window.scrollTo({ top: 4518, behavior: "smooth" });
     }
-    if (width < "376") {
+    if (width < 613) {
+      window.scrollTo({ top: 4774, behavior: "smooth" });
+    }
+    if (width < 477) {
+      window.scrollTo({ top: 5016, behavior: "smooth" });
+    }
+
+    if (width < 376) {
       window.scrollTo({ top: 5138, behavior: "smooth" });
     }
   };

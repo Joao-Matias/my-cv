@@ -193,6 +193,26 @@
   }
 }
 
+@media (max-width: 38.25em) {
+  .contactContainerHeader {
+    width: 100%;
+  }
+}
+
+@media (max-width: 29.75em) {
+  .contactContainerHeader {
+    width: 100%;
+  }
+
+  .contactContainerNumeral {
+    font-size: 3.2rem;
+  }
+
+  .contactContainerTitle {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 23.44em) {
   .contactBox {
     width: 95%;

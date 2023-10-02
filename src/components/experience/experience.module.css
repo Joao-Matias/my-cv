@@ -202,6 +202,18 @@
   }
 }
 
+@media (max-width: 38.25em) {
+  .experienceContainer {
+    height: 210rem;
+  }
+}
+
+@media (max-width: 29.75em) {
+  .experienceContainer {
+    height: 230rem;
+  }
+}
+
 @media (max-width: 23.44em) {
   .experiencesContainer {
     margin-top: 3rem;
