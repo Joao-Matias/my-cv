@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./experience.module.css";
 import { TbPointFilled } from "react-icons/tb";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import getExperienceOptions from "../../services/get-experience-options";
 
