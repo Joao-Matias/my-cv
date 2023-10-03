@@ -3,9 +3,23 @@
 
   width: 100%;
   height: 13rem;
+  max-width: 192rem;
 
   justify-content: center;
   align-items: center;
+}
+
+.landingNavStickCont {
+  background-color: #e5e5e5;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 13rem;
+  top: 0;
+  z-index: 2;
+  opacity: 0.95;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  justify-content: center;
 }
 
 .landingNavStick {
@@ -13,14 +27,11 @@
   display: flex;
 
   width: 100%;
+  max-width: 192rem;
   height: 13rem;
   top: 0;
-  background-color: #e5e5e5;
-  justify-content: center;
   align-items: center;
   z-index: 3;
-  opacity: 0.95;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .landingImg {
@@ -157,6 +168,7 @@
   line-height: 2.5rem;
   padding: 0;
   display: none;
+  width: 95%;
 }
 
 .landingNavMenuListMobileHidden {
@@ -167,6 +179,7 @@
   opacity: 0;
   line-height: 2.5rem;
   display: none;
+  width: 95%;
 }
 
 .landingNavMenuListMobileTitle {
@@ -238,6 +251,24 @@
   }
 }
 
+@media (max-width: 29.75em) {
+  .landingNavMenu {
+    width: 30%;
+  }
+
+  .icon {
+    margin: 0 2rem;
+  }
+
+  .landingNavMenuListMobile {
+    width: 35%;
+  }
+
+  .landingNavNameBox {
+    width: 65%;
+  }
+}
+
 @media (max-width: 23.44em) {
   .landingNavMenuListIcon,
   .landingNavMenuListIconHidden {
@@ -270,5 +301,9 @@
 
   .landingNavNameFirstStick {
     height: 7rem;
+  }
+
+  .landingNavStickCont {
+    width: 100%;
   }
 }

@@ -45,8 +45,8 @@ const Landing = () => {
             I've always had an interest in web development and have recently
             decided to pursue this as a career. Through a series of different
             courses, own projects and guidance from some web dev friends, I've
-            been improving my codding skills and I'm now ready to embark in a
-            new challenge.
+            been improving my coding skills and I'm now ready to embark in a new
+            challenge.
             <br />
             <br />
             Exciting times ahead.

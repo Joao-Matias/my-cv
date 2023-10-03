@@ -28,6 +28,7 @@
 .contactContainerHeader {
   display: flex;
   width: 60%;
+  gap: 1rem;
 }
 
 .contactContainerNumeral {
@@ -79,8 +80,9 @@
 }
 
 .contactImg {
+  object-fit: contain;
   width: 80%;
-  border-radius: 5rem;
+  border-radius: 20rem;
 }
 
 .contactDetailsCont {
@@ -159,7 +161,7 @@
 
 @media (max-width: 48em) {
   .contactContainer {
-    height: auto;
+    height: 105rem;
   }
   .contactBox {
     width: 75%;
@@ -191,11 +193,23 @@
   .contactImg {
     width: 80%;
   }
+
+  .contactBox {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 38.25em) {
   .contactContainerHeader {
     width: 100%;
+  }
+
+  .contactBox {
+    padding: 1rem;
+  }
+
+  .contactContainer {
+    height: 100rem;
   }
 }
 
@@ -211,6 +225,14 @@
   .contactContainerTitle {
     font-size: 3.5rem;
   }
+
+  .contactBox {
+    padding: 1rem;
+  }
+
+  .contactContainer {
+    height: 100rem;
+  }
 }
 
 @media (max-width: 23.44em) {
@@ -218,6 +240,7 @@
     width: 95%;
     flex-direction: column;
     height: auto;
+    padding: 1rem;
   }
 
   .contactTextBox {
@@ -240,5 +263,9 @@
 
   .contactDetailsCont {
     width: 90%;
+  }
+
+  .contactContainer {
+    height: 100rem;
   }
 }

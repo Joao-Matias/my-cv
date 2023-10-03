@@ -39,6 +39,7 @@
 
   margin-top: 7rem;
   padding-bottom: 10rem;
+  max-width: 192rem;
 }
 
 .experiencesBox {
@@ -53,7 +54,6 @@
 
 .experiencesCont {
   display: flex;
-  position: absolute;
   flex-direction: column;
 
   width: 48%;
@@ -93,14 +93,6 @@
   font-size: 2.2rem;
 }
 
-.experiencesBulletsCont {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  width: 2%;
-  height: 2rem;
-}
-
 .experiencesBullets {
   font-size: 1.5rem;
 }
@@ -108,7 +100,6 @@
 .experiencesCompanyCont {
   display: flex;
   flex-direction: column;
-  position: absolute;
 
   width: 48%;
   transform: translateY(100%);
@@ -206,25 +197,55 @@
   .experienceContainer {
     height: 210rem;
   }
+
+  .experiencesCompanyCont {
+    width: 90%;
+  }
+
+  .experiencesCont {
+    width: 90%;
+  }
+
+  .experiencesContAnimation {
+    width: 90%;
+  }
+
+  .experiencesCompanyContAnimation {
+    width: 90%;
+  }
 }
 
 @media (max-width: 29.75em) {
   .experienceContainer {
     height: 230rem;
   }
+
+  .experiencesCompanyCont {
+    width: 90%;
+  }
+
+  .experiencesCont {
+    width: 90%;
+  }
+
+  .experiencesYearsCont {
+    width: 50%;
+  }
+
+  .experiencesContAnimation {
+    width: 90%;
+  }
+
+  .experiencesCompanyContAnimation {
+    width: 90%;
+  }
 }
 
 @media (max-width: 23.44em) {
   .experiencesContainer {
     margin-top: 3rem;
-
+    height: 227.6rem;
     padding-bottom: 7rem;
-  }
-
-  .experiencesBox {
-    width: 95%;
-    gap: 1rem;
-    flex-direction: column;
   }
 
   .experiencesYearsCont {
@@ -244,14 +265,23 @@
   }
 
   .experiencesContAnimation {
-    width: 100%;
+    width: 90%;
   }
 
   .experiencesCompanyContAnimation {
-    width: 100%;
+    width: 90%;
   }
 
-  .experienceContainer {
-    height: 227.6rem;
+  .experiencesBox {
+    width: 95%;
+    gap: 1rem;
+  }
+
+  .experiencesCompanyCont {
+    width: 90%;
+  }
+
+  .experiencesCont {
+    width: 90%;
   }
 }

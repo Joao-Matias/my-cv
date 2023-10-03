@@ -10,8 +10,11 @@ const Projects = () => {
   const [selectedPrj, setSelectedPrj] = useState({
     id: "initial",
     title: "Select a project",
-    description:
-      "You will find my projects here, click in any to find more information about them.",
+    appDescription: [
+      { text: "You will find my projects here" },
+      { text: "click in any to find more information about them" },
+    ],
+    techDescription: [],
   });
 
   const id = Date.now();
@@ -47,9 +50,24 @@ const Projects = () => {
               )}
             </div>
             <div className={style.projectTextDescriptionCont}>
-              <p className={style.projectTextDescription}>
-                {selectedPrj.description}
-              </p>
+              <ul className={style.projectTextDescription}>
+                {selectedPrj.appDescription.map((desc, i) => {
+                  return (
+                    <li className={style.projectTextDescription} key={i}>
+                      {desc.text}
+                    </li>
+                  );
+                })}
+              </ul>
+              <ul className={style.projectTextDescription}>
+                {selectedPrj.techDescription.map((desc, i) => {
+                  return (
+                    <li className={style.projectTextDescription2} key={i}>
+                      {desc.text}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
           <div className={style.projectLinkCont}>

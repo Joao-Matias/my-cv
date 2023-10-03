@@ -41,6 +41,10 @@
   flex-direction: row;
 }
 
+.projectTextCont {
+  width: 100%;
+}
+
 .projectTextBox {
   display: flex;
   flex-direction: column;
@@ -48,7 +52,6 @@
 
   width: 45%;
 
-  margin-top: 5rem;
   margin-bottom: 5rem;
 
   animation: rollOut 0.5s ease-in-out;
@@ -79,12 +82,25 @@
 
 .projectTextDescriptionCont {
   margin-top: 5rem;
+  display: flex;
 }
 
 .projectTextDescription {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   color: #14213d;
+  margin-top: 1rem;
+}
+
+.projectTextDescription2 {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  color: #14213d;
+  margin-top: 1rem;
+}
+
+.projectTextDescription2:first-child {
+  font-weight: 700;
 }
 
 .projectButtonCont {
@@ -211,6 +227,14 @@
     display: flex;
     flex-direction: column;
   }
+
+  .projectTextDescriptionCont {
+    flex-direction: column;
+  }
+
+  .projectTextBox {
+    height: 65rem;
+  }
 }
 
 @media (max-width: 64em) {
@@ -226,6 +250,14 @@
 
   .projectTextBox {
     gap: 3rem;
+  }
+
+  .projectTextDescriptionCont {
+    flex-direction: column;
+  }
+
+  .projectTextBox {
+    height: 65rem;
   }
 }
 
@@ -255,6 +287,18 @@
   .projectLinkCont {
     width: 60%;
   }
+
+  .projectTextDescriptionCont {
+    flex-direction: column;
+  }
+
+  .projectTextDescription {
+    width: 100%;
+  }
+
+  .projectTextBox {
+    margin-top: 5rem;
+  }
 }
 
 @media (max-width: 23.44em) {
@@ -271,6 +315,8 @@
   .projectTextBox {
     width: 90%;
     gap: 3rem;
+    margin-top: 5rem;
+    height: 65rem;
   }
 
   .projectImgsBox {
@@ -281,5 +327,9 @@
 
   .projectLinkCont {
     width: 70%;
+  }
+
+  .projectTextDescriptionCont {
+    flex-direction: column;
   }
 }
