@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import style from "./projects.module.css";
-import getProjectsOptions from "../../services/get-projects-options";
+import style from './projects.module.css';
+import getProjectsOptions from '../../services/get-projects-options';
 
-import gitLogo from "../../img/logo-github.svg";
+import gitLogo from '../../img/logo-github.svg';
 
 const Projects = () => {
   const [selectedPrj, setSelectedPrj] = useState({
-    id: "initial",
-    title: "Select a project",
+    id: 'initial',
+    title: 'Select a project',
     appDescription: [
-      { text: "You will find my projects here" },
-      { text: "click in any to find more information about them" },
+      { text: 'You will find my projects here' },
+      { text: 'click in any to find more information about them' },
     ],
     techDescription: [],
   });
@@ -31,7 +31,7 @@ const Projects = () => {
         <div key={id} className={style.projectTextBox}>
           <div className={style.projectTextCont}>
             <div className={style.projectTextTitleCont}>
-              {selectedPrj.id === "initial" ? (
+              {selectedPrj.id === 'initial' ? (
                 <div>
                   <h3 className={style.projectTextTitle}>
                     {selectedPrj.title}
@@ -41,7 +41,7 @@ const Projects = () => {
                 <Link
                   className={style.projectButtonCont}
                   to={selectedPrj.link}
-                  target="_blank"
+                  target='_blank'
                 >
                   <h3 className={style.projectTextTitle}>
                     {selectedPrj.title}
@@ -72,22 +72,22 @@ const Projects = () => {
           </div>
           <div className={style.projectLinkCont}>
             {!selectedPrj.git ? (
-              ""
+              ''
             ) : (
               <>
                 <div className={style.projectGitCont}>
-                  <Link to={selectedPrj.git} target="_blank">
+                  <Link to={selectedPrj.git} target='_blank'>
                     <img
                       className={style.projectGit}
                       src={gitLogo}
-                      alt="Git Logo"
+                      alt='Git Logo'
                     />
                   </Link>
                 </div>
                 <Link
                   className={style.projectVisitBox}
-                  to={selectedPrj.git}
-                  target="_blank"
+                  to={selectedPrj.link}
+                  target='_blank'
                 >
                   <p className={style.projectVisit}>
                     Go to {selectedPrj.title}
